@@ -1,0 +1,120 @@
+body {
+  background-color: #ddbea9;
+}
+
+
+.fontfam {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#color {
+  padding-top: 8px;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  display: block;
+  color: rgba(255,255,255,.75);
+}
+
+.bigbrand {
+  font-size: 1.5em;
+}
+
+.centering {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.postdate {
+  text-align: center;
+}
+
+.posttitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+.postcontent {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+}
+
+.btn-comment {
+  position: absolute;
+  right: 0px;
+}
+/* Copyright (c) 2020 by Prathamesh Koshti */
+
+.loader_wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #1a1940;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,153,212,0) calc(15% + 100px), rgba(0,99,138,0) calc(85% + 100px), rgba(0,0,0,0.15) 100%);
+}
+
+:root {
+  --yellow: #feb60a;
+  --red: #ff0062;
+  --blue: #00dbf9;
+  --violet: #da00f7;
+}
+
+span.db {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span > div {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
+  margin: 2vw;
+  background-image: linear-gradient(145deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
+  animation: bounce 1.5s 0.5s linear infinite;
+}
+.yellow {
+  background-color: var(--yellow);
+}
+
+.red {
+  background-color: var(--red);
+  animation-delay: 0.1s;
+}
+
+.blue {
+  background-color: var(--blue);
+  animation-delay: 0.2s;
+}
+
+.violet {
+  background-color: var(--violet);
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+  0%, 50%, 100% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  25% {
+    transform: scale(0.6);
+    filter: blur(3px);
+  }
+  75% {
+    filter: blur(3px);
+    transform: scale(1.4);
+  }
+}
