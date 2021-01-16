@@ -39,3 +39,5 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.text
+        
+photo = models.ImageField(upload_to="gallery")

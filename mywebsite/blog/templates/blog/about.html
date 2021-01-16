@@ -1,9 +1,33 @@
 {% extends "blog/base.html" %}
 {% block content %}
-<h1><strong>About me:</strong></h1>
-<hr>
-<h4>Hi, I'm Tursunov Botir. Currently, I am a sophomore at Webster University
-majoring in Management Information Systems.  Also, I'm a backend developer.
-I like solving complex programming tasks and enhancing my coding skills.</h4><br>
-<p>Thanks!</p>
+{% load static %}
+
+<div class="container">
+  <div class="about">
+    <img class="profile" src="{% static 'images/profile.png' %}"/>
+
+    <h1>Tursunov Botir</h1>
+    <h4>Backend developer</h4>
+    <div class="grid-config">
+      <div class="iam">
+        <h3>I am</h3>
+        <ul class="list-items">
+          <li>A student</li>
+          <li>A backend developer</li>
+          <li>A reader</li>
+        </ul>
+      </div>
+      <div class="ilike">
+        <h3>I like to</h3>
+        <ul class="list-items">
+          <li>learn new things</li>
+          <li>meet new people</li>
+          <li>play Blur on PS3</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 {% endblock %}
